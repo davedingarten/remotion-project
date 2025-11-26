@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: var(--padding-landscape);
+  left: var(--padding-landscape);
+  width: auto;
+}
+
+.container.portrait {
+    bottom: var(--padding-portrait);
+    left: var(--padding-portrait);
+}
+
+
+.title {
+  font-size: 3.7cqmax; /* text-6xl */
+  font-weight: 900; /* font-black */
+  color: #111827; /* text-gray-900 */
+  line-height: 1; /* leading-tight */
+  margin-bottom: -0.2em; /* Ignore descender */
+
+}
+

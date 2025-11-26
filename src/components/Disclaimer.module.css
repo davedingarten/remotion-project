@@ -1,0 +1,28 @@
+.container {
+    font-size: 2.1cqmin;
+    /* text-xs */
+    color: #000000;
+    /* text-gray-500 */
+    font-weight: 300;
+    /* font-light */
+    text-align: left;
+    padding-left: var(--padding-landscape);
+    /* px-8 */
+    padding-right: var(--padding-landscape);
+    font-family: 'SamsungOne', sans-serif;
+    position: absolute;
+    bottom: var(--padding-landscape);
+    left: 0;
+    width: 100%;
+}
+
+
+.container.portrait {
+    padding-left: var(--padding-portrait);
+    padding-right: var(--padding-portrait);
+    bottom: var(--padding-portrait);
+}
+
+.text {
+    margin: 0;
+}

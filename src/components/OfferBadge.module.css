@@ -1,0 +1,80 @@
+.container {
+    position: absolute;
+    padding: 2.5cqmax;
+    /* p-6 */
+    border-radius: 2cqmax;
+    /* rounded-3xl */
+    border: .4cqmax dashed #cccccc;
+    /* border-blue-300 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* bg-white/50 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20cqh;
+    transform: translate3d(0px, 0px, 0.1px);
+}
+
+.portrait {
+    flex-direction: row-reverse;
+    margin-top: 0;
+}
+
+.landscape {}
+
+.imageContainer {
+    margin-bottom: 1cqh;
+    /* mb-2 */
+    position: relative;
+    z-index: 10;
+    margin-top: -22cqh;
+    /* -mt-16 */
+}
+
+.portrait .imageContainer {
+    margin-bottom: -2cqh;
+    margin-top: -18cqh;
+}
+
+.portrait .image {
+    width: 30cqw;
+}
+
+.image {
+    width: 50cqw;
+    height: auto;
+    object-fit: contain;
+}
+
+.textContainer {
+    text-rendering: geometricPrecision;
+    position: relative;
+    display: block;
+    transform: translate3d(0px, 0px, 0.1px);
+    font-size: 4.4cqw;
+    /* text-2xl */
+    color: #111827;
+    /* text-gray-900 */
+    font-weight: 400;
+    /* font-normal */
+    line-height: 1.25;
+    /* leading-tight */
+    margin: 0;
+}
+
+.textContainer strong {
+    font-size: 6cqw;
+    /* text-3xl */
+    font-weight: 700;
+    /* font-bold */
+    display: inline-block; /* Ensure transforms work if needed, though mostly for layout */
+}
+
+.portrait .textContainer {
+    font-size: 3.3cqw;
+}
+
+.portrait .textContainer strong {
+    font-size: 4.7cqw;
+}

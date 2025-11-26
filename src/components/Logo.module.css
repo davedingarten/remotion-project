@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: var(--padding-landscape);
+  left: var(--padding-landscape);
+  width: 36cqh;
+}
+
+.container.portrait {
+    top: var(--padding-portrait);
+    left: var(--padding-portrait);
+    width: 36cqw;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.fallbackText {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  color: #2563eb; /* text-blue-600 */
+  letter-spacing: -0.05em; /* tracking-tighter */
+}

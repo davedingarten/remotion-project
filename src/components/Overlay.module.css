@@ -1,0 +1,78 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background-color: #f6f6f6;
+    
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 50% 100%;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    margin-top: 15%;
+}
+
+.portrait .content {
+  margin-top: 30%;
+}
+
+.portrait .backgroundImage {
+  object-position: 50% 80%;
+}
+
+.mask {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-family: "SamsungSharpSans", sans-serif;
+    font-weight: 700;
+    font-size: 6cqw;
+    color: #000;
+    margin: 0;
+    /* margin-bottom: 1rem; Removed to handle spacing via mask/flex if needed, or keep it */
+    display: block;
+}
+
+.subtitleRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+    font-family: "SamsungSharpSans", sans-serif;
+    font-weight: 500;
+    font-size: 3.5cqw;
+}
+
+.subtitle {
+    color: #000;
+}
+
+.icon {
+    width: 1.1em;
+    height: 1.1em;
+    margin-top: -0.1em;
+    object-fit: contain;
+}

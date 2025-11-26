@@ -1,1 +1,39 @@
-@import "tailwindcss";
+:root {
+  --font-sans: "SamsungSharpSans", sans-serif;
+  --padding-landscape: 5cqh;
+  --padding-portrait: 5cqw;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+
+}
+
+@font-face {
+  font-family: "SamsungSharpSans";
+  src: url("./fonts/SamsungSharpSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SamsungSharpSans";
+  src: url("./fonts/SamsungSharpSans-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SamsungSharpSans";
+  src: url("./fonts/SamsungSharpSans-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SamsungOne";
+  src: url("./fonts/SamsungOne-400C_v1.0.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}

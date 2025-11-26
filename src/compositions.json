@@ -1,0 +1,43 @@
+[
+    {
+        "id": "Landscape",
+        "width": 1920,
+        "height": 1080,
+        "fps": 30,
+        "durationInFrames": 300,
+        "orientation": "landscape"
+    },
+    {
+        "id": "Portrait",
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "durationInFrames": 300,
+        "orientation": "portrait"
+    },
+    {
+        "id": "Landscape4K",
+        "width": 3840,
+        "height": 2160,
+        "fps": 30,
+        "durationInFrames": 300,
+        "orientation": "landscape"
+    },
+    {
+        "id": "Portrait4K",
+        "width": 2160,
+        "height": 3840,
+        "fps": 30,
+        "durationInFrames": 300,
+        "orientation": "portrait"
+    },
+    {
+        "id": "LandscapeEmpty",
+        "width": 3840,
+        "height": 2160,
+        "fps": 30,
+        "durationInFrames": 300,
+        "orientation": "portrait",
+        "customWidth": 1280
+    }
+]
