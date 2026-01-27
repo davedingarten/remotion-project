@@ -8,6 +8,7 @@
   "dependencies": {
     "@remotion/animation-utils": "4.0.377",
     "@remotion/cli": "4.0.377",
+    "@remotion/player": "^4.0.377",
     "@remotion/shapes": "4.0.377",
     "@remotion/tailwind-v4": "4.0.377",
     "@remotion/zod-types": "4.0.377",
@@ -22,6 +23,7 @@
     "@remotion/renderer": "4.0.377",
     "@types/react": "19.0.0",
     "@types/web": "0.0.166",
+    "concurrently": "^9.1.2",
     "eslint": "9.19.0",
     "prettier": "3.6.0",
     "typescript": "5.8.2"
@@ -36,7 +38,12 @@
     "render:LandscapeEmpty": "remotion render LandscapeEmpty out/LandscapeEmpty.mp4",
     "render:all": "npx -y tsx render-all.ts",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "editor": "concurrently \"npm run editor:server\" \"npm run editor:client\" \"npm run editor:studio\"",
+    "editor:studio": "remotion studio --port 3002",
+    "editor:server": "cd server && npm run dev",
+    "editor:client": "cd editor && npm run dev",
+    "editor:install": "cd server && npm install && cd ../editor && npm install"
   },
   "sideEffects": [
     "*.css"
