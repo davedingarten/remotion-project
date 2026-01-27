@@ -21,7 +21,7 @@ export const MainComposition: React.FC<MainCompositionProps> = (props) => {
     const isLandscape = props.orientation === 'landscape';
 
     // Timeline Configuration
-    const VIDEO_DURATION = 5 * fps; // Play video for 5 seconds
+    const VIDEO_DURATION = 7 * fps; // Play video for 5 seconds
     const OVERLAY_ENTRANCE = 1 * fps; // Time for overlay to slide in (must match Overlay component)
 
     return (
