@@ -46,7 +46,12 @@ samsung-remotion/
 │       ├── App.tsx               # Main editor app
 │       ├── components/
 │       │   ├── FormPanel.tsx     # Data editing form
-│       │   └── PreviewPanel.tsx  # Live video preview
+│       │   ├── PreviewPanel.tsx  # Live video preview
+│       │   └── fields/           # Form field components
+│       │       ├── TextField.tsx
+│       │       ├── TextAreaField.tsx
+│       │       ├── HtmlField.tsx
+│       │       └── ReadOnlyField.tsx
 │       ├── hooks/
 │       │   └── useCompositionData.ts
 │       └── api/
@@ -79,11 +84,11 @@ samsung-remotion/
 
 ```json
 {
-    "title": "Galaxy Tab S14 Series 21",
+    "title": "Galaxy Tab S12 Series",
     "subtitle": "Galaxy AI",
     "subtitleIcon": "icon_ai.png",
-    "offerText": "Ontvang nu tijdelijk de<br/><strong>Galaxy Buds3 Pro*</strong><br/>(adviesprijs €319)",
-    "disclaimer": "* Actieperiode: ...",
+    "offerText": "Ontvang nu tijdelijk de<br/><strong>Galaxy Buds3 Pro*</strong><br/>(adviesprijs €309)",
+    "disclaimer": "* Actieperiode: 13-10-2025 t/m 09-11-2027...",
     "videoSrcLandscape": "video/video_landscape.mp4",
     "videoSrcPortrait": "video/video_portrait.mp4",
     "logoSrc": "Samsung_Orig_Wordmark_BLACK_RGB.svg",
@@ -224,8 +229,8 @@ In CSS:
 ### 5.3 Fonts
 
 Samsung brand fonts loaded in `index.css`:
-- SamsungOne-400C (body text)
-- SamsungSharpSans-Bold/Medium/Regular (headlines)
+- SamsungSharpSans-Regular/Medium/Bold (primary font, used for all text)
+- SamsungOne-400C (alternative body text)
 
 ---
 
