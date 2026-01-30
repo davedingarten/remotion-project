@@ -39,8 +39,9 @@
     "render:all": "npx -y tsx render-all.ts",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "editor": "concurrently \"npm run editor:server\" \"npm run editor:client\" \"npm run editor:studio\"",
-    "editor:studio": "remotion studio --port 3002",
+    "editor": "npm run editor:cleanup && concurrently \"npm run editor:server\" \"npm run editor:client\" \"npm run editor:studio\"",
+    "editor:cleanup": "lsof -ti:3000,3001,3002 | xargs kill -9 2>/dev/null || true",
+    "editor:studio": "remotion studio --port 3002 --no-open",
     "editor:server": "cd server && npm run dev",
     "editor:client": "cd editor && npm run dev",
     "editor:install": "cd server && npm install && cd ../editor && npm install"

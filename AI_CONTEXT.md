@@ -261,10 +261,10 @@ Imports and applies `webpackOverride` from shared config.
 
 ### 7.2 Editor Workflow
 
-1. Run `npm run editor` (starts 3 services concurrently)
-2. Server runs on `http://localhost:3001` (API)
-3. Editor UI runs on `http://localhost:5173` (Vite)
-4. Remotion Studio runs on `http://localhost:3002`
+1. Run `npm run editor` (automatically clears ports and starts 3 services)
+2. Editor UI opens automatically at `http://localhost:3000/` (Vite)
+3. API Server runs on `http://localhost:3001`
+4. Remotion Studio runs on `http://localhost:3002` (no auto-open)
 
 ### 7.3 API Endpoints
 
@@ -348,6 +348,7 @@ Animation timing is controlled in each component:
 | Images not loading | Use `staticFile()` wrapper, check `public/` path |
 | Animation jitter | Clamp spring values after completion |
 | Editor not connecting | Ensure server is running on port 3001 |
+| Port conflicts | `npm run editor` auto-clears ports; manual: `lsof -ti:3000,3001,3002 \| xargs kill -9` |
 | Render fails | Check console for missing assets or type errors |
 
 ---

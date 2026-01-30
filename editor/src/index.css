@@ -1,0 +1,54 @@
+/* Editor-specific styles - override project CSS */
+
+/* Helvetica Neue font faces */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("@project/fonts/HelveticaNeueLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("@project/fonts/HelveticaNeueRoman.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("@project/fonts/HelveticaNeueMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("@project/fonts/HelveticaNeueBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("@project/fonts/HelveticaNeueItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+:root {
+  --editor-font: "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  font-family: var(--editor-font) !important;
+  background: #1a1a1a;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset any inherited styles from Remotion project CSS */
+#root {
+  font-family: var(--editor-font);
+}

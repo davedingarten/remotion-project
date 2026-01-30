@@ -117,7 +117,7 @@ export const FormPanel: React.FC<FormPanelProps> = ({
             value={data.disclaimer}
             onChange={(value) => onUpdate('disclaimer', value)}
             placeholder="Enter disclaimer text..."
-            rows={5}
+            rows={8}
           />
         </div>
 
@@ -230,7 +230,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '8px 16px',
     fontSize: '14px',
     fontWeight: 500,
-    fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif',
+    fontFamily: '"Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif',
     border: 'none',
     borderRadius: '6px',
     backgroundColor: '#0066ff',
@@ -281,7 +281,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '12px 16px',
     fontSize: '14px',
     fontWeight: 500,
-    fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif',
+    fontFamily: '"Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif',
     border: 'none',
     borderRadius: '6px',
     backgroundColor: '#fff',
